@@ -1,0 +1,126 @@
+.map{
+	position: relative;
+	bottom:-50px;
+	z-index: 50;	
+
+	h3{
+		font-size: 2.000rem;
+		color: #1f1f1f;
+	}
+	p{
+		color: #c0c0c0;
+		font-size: 1.556rem;
+		margin-bottom: 30px;
+	}
+	iframe{
+		position: relative;
+		width: 100%;
+		z-index: 100;
+		border: none;
+	}
+}
+
+footer{
+	background: url("../img/bgFooter.jpg");
+	background-size: cover;	
+	padding-bottom: 65px;
+	margin-bottom: -50px;
+	z-index: 10;
+	color: #fff;
+	h2{
+		margin-top: 100px;
+		margin-bottom: 70px;
+		color: #fff;
+	}
+	.contacts{
+		display: flex;
+		flex-direction: column;
+		@media screen and (max-width: 992px) {
+			margin-bottom: 30px;
+		}
+	}
+	p:first-child{
+		font-size: 1.556rem;
+	}
+	small{
+		margin-top: -17px;
+	}
+	.ya-share2{
+		margin-top: 20px;
+		.ya-share2__item{
+			margin-right: 5px;			
+		}
+		span{
+			border-radius: 50%;
+		}
+		.ya-share2__badge:hover,
+		.ya-share2__badge:focus{
+			background: $mainColor;
+			transition: all .2s;
+		}
+		.ya-share2__container_size_m .ya-share2__icon {
+		    height: 30px;
+		    width: 30px;
+		}    
+	}
+	.mailFooter{
+		color: #fff;
+		font-size: 1.556rem;
+		margin-bottom: 10px;
+		max-width: 240px;
+		span{
+			font-size: 1.111rem;
+			display: block;
+			margin-top: -10px;
+		}
+	}
+	input,
+	textarea{
+		border-radius: 20px;
+		font-size: 1.2rem;
+	}
+	.feedback{
+		display: flex;
+		justify-content: center;
+	}
+	#text{
+		padding: 20px;
+		width: 93%;
+		resize: none;
+		min-height: 170px;
+		@media screen and (max-width: 1200px){
+			width: 100%;
+		}
+	}
+	.form-group,
+	.form-inline{
+		width: 100%;
+		.btn-primary{
+			display: block;
+			background: $mainColor;
+			margin: 27px auto 0 auto;
+			outline: none;
+			@media screen and (max-width:1200px) {
+				margin: 40px auto 0 auto;
+			}
+			&:hover,
+			&:focus{
+				background: transparent;
+				transition: all .2s;
+				border: 1px solid #fff;
+			}
+		}
+	}
+	.form-inline .form-control:not(#text){
+		width: 250px;
+		height: 60px;
+		font-size: 1.2rem;
+		margin-right: 10px;
+		margin-bottom: 15px;
+		@media screen and (max-width: 1200px){
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+}

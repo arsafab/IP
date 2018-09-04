@@ -1,0 +1,122 @@
+.bgReason{
+	margin-top: 40px;
+	background:#f9f9f9;
+}
+.reason{
+	h3{
+		color: #777777;
+		font-size: 2rem;
+		margin-top: 30px;
+		margin-bottom: 45px;
+	}
+	.items{
+		display: flex;
+		flex-direction: column;
+		div{
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+		}
+		svg{
+			width: 110px;
+			height: 150px;
+			
+			
+			@media screen and (max-width:480px) {
+				display: none;
+			}
+		}
+		p{
+			padding: 30px 20px;
+			margin-left: 30px;
+			margin-bottom: 30px;
+			border-radius: 41px;
+			background: $mainColor;			
+			color: #fff;
+			position: relative;
+			@media screen and (max-width:520px) {
+				margin-left: 20px;
+				padding-left: 25px;
+			}
+			&::before{
+				content: '';
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: 20%;
+				left: -3%;
+				border-top: 35px solid transparent;
+				border-right: 30px solid $mainColor;
+				border-bottom: 35px solid transparent;
+			}
+		}
+		div:nth-child(2) p{
+			margin-left: 0;
+			margin-right: 30px;
+			@media screen and (max-width:520px) {
+				margin-right: 20px;
+			}
+			&::after{
+				content: '';
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: 20%;
+				right: -3%;
+				border-top: 35px solid transparent;
+				border-left: 30px solid $mainColor;
+				border-bottom: 35px solid transparent;
+			}
+			&::before{
+				content: normal;				
+			}
+		}
+	}
+	.feedback{
+		background: #ffffa2;
+		padding: 40px 20px;
+		@media screen and (max-width:1200px) {
+			padding: 25px 20px 50px 20px;
+		}
+		@media screen and (max-width:768px) {
+			padding: 25px 15%;
+		}
+		@media screen and (max-width:480px) {
+			margin-bottom: -30px;
+		}
+		p:first-child{
+			font-size: 1.333rem;
+			color: #00223c;
+		}
+		.btn-primary{
+			display: block;
+			background: $mainColor;
+			margin: 27px auto 0 auto;
+			outline: none;
+			@media screen and (max-width:1200px) {
+				margin: 40px auto 0 auto;
+			}
+			&:hover,
+			&:focus{
+				background: transparent;
+				transition: all .2s;
+				color: $mainColor;
+				border: 1px solid $mainColor;
+			}
+		}
+	}	
+	.form-group{
+		display: flex;
+		flex-direction: column;
+		label{
+			color: #00223c;
+			margin-top: 20px;
+			@media screen and (max-width:768px) {
+				margin-top: 5px;
+			}
+		}
+	}
+	.form-control:focus{
+		border-color: $mainColor;
+	}
+}

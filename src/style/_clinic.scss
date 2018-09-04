@@ -1,0 +1,51 @@
+.clinic{
+	position: relative;
+	&::before{
+		content: '';
+		width: 100%;
+		height: 50px;
+		background: #fff;
+		position: absolute;
+		top: -78px ;
+		left: 0;
+	}
+	&::after{
+		content: '';
+		width: 100%;
+		height: 50px;
+		background: #fff;
+		position: absolute;
+		bottom: -80px ;
+		left: 0;
+	}
+	h2{
+		text-align: right;
+		padding-right: 10%;
+		@media screen and (max-width: 992px) {
+			text-align: center;
+			padding-right: 0;
+		}
+	}
+	P{
+		font-size: 0.95rem;
+	}
+	img{
+		float: left;
+		padding: 50px;
+		margin-top: -30px;
+		@media screen and (max-width: 1200px) {
+			width: 400px;
+			padding: 20px 20px 5px 0;
+			margin-top: -10px;
+		}
+		@media screen and (max-width: 700px) {
+			width: 250px;
+		}
+		@media screen and (max-width: 550px) {
+			float: none;
+			width: auto;
+			margin: 0 auto 10px auto;
+			display: block;
+		}
+	}
+}

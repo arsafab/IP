@@ -1,0 +1,24 @@
+.question {
+	margin-top: 30px;
+	text-align: center;
+	h3{
+		color: #1f1f1f;
+	}
+	.btn-primary{
+		&:hover,
+		&:focus{
+			background: $mainColor;
+			transition: all .2s;
+		}
+	}
+	p{
+		margin: 40px 0;
+		@media screen and (max-width: 600px) {
+			margin: 20px 0;
+		}
+	}
+	.btn-info{
+		padding: 17px 30px 15px 30px;
+		border-radius: 30px;
+	}
+}

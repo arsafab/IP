@@ -1,0 +1,155 @@
+.menu{
+	position: relative;
+	.logo {
+		width:200px;
+		height:50px;
+		float:left;
+		@media screen and (max-width: 340px) {
+			width:180px;
+		}
+		&0 {
+			stroke:$mainColor;
+			stroke-width:5.66931;
+			stroke-opacity:0.301961;
+		}
+		&1 {
+			fill:none;
+		}
+		&2 {
+			fill:$mainColor;
+		}
+		&3 {
+			fill:white;
+		}
+		&4 {
+			fill:#fff;
+			fill-rule:nonzero;
+		}
+		&5 {
+			fill:white;
+			fill-rule:nonzero;
+		}
+	}
+	/*.phone{
+		float: left;
+		margin-top: -12px;
+		position: relative;
+		z-index: 100;
+		@media screen and (max-width: 610px) {
+			position: absolute;
+			left: -20px;
+			top:115px;
+		}
+		a{
+			color: #fff;
+			font-family: RobotoBold, sans-serif;
+			font-size: 1.111rem;
+			@media screen and (max-width: 440px) {
+				font-size: 0.9rem;
+			}
+			i{
+				border:1px solid #fff;
+				border-radius: 50%;
+				padding: 5px;
+				margin-right: 3px;
+				position: relative;
+				top: 5px;
+			}
+			span{
+				font-size: 0.833rem;
+				font-family: LatoLight, sans-serif;
+				margin-top: -20px;
+				margin-left: 37px;
+				display: block;
+				@media screen and (max-width: 440px) {
+					font-size: 0.6rem;
+				}
+			}
+			&:hover,
+			&:focus{
+				color:$mainColor;
+			}
+			&:hover i,
+			&:focus i{
+				border-color:$mainColor;
+			}
+		}
+	}*/
+	@media screen and (max-width: 1200px) {
+		.navbar {
+			ul{
+				float: right;
+			}
+			li{
+				margin-bottom: 5px;
+			}	
+		}
+	}
+}
+.navbar-toggle {
+	margin-top: 15px;
+	.icon-bar {
+	    position: relative;
+	    transition: all .1s;
+	}
+}	
+.navbar-toggle.active {
+	.second {
+	    top: 6px;
+	    transform: rotate(-45deg) translate(4px, -5px) 
+	}
+	.first {
+	    display: none;
+	}
+	.third {
+	    top: -6px;
+	    transform: rotate(45deg) translate(0px, 0px) 
+	}
+}
+
+.jumbo{
+	margin-top: 60px;
+	width: 540px;
+	@media screen and (max-width: 610px) {
+		margin-top: 130px;
+	}
+	@media screen and (max-width: 420px) {
+		h1{
+			font-size: 34px;
+		}	
+	}
+	p{
+		width: 400px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		color: #f0f0f0;
+		@media screen and (max-width: 420px) {
+			width: auto;
+			margin-bottom: 40px;
+		}
+	}
+	.btn-info{
+		padding: 17px 30px 15px 30px;
+		border-radius: 30px;
+	}
+}
+
+.modal{
+	.btn-primary{
+		&:hover,
+		&:focus{
+			background: transparent;
+			transition: all .2s;
+			color: $mainColor;
+			border: 1px solid $mainColor;
+		}
+	}
+	h4{
+		color: $mainColor;
+	}
+	textarea{
+		resize: none;
+	}
+}
+
+
